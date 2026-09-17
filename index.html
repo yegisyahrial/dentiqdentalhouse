@@ -308,7 +308,7 @@
             max-width: 1200px;
             margin: auto;
             overflow: hidden;
-            padding: 1rem 0 3rem; /* padding bottom for pagination dots */
+            padding: 1rem 0 3rem;
         }
 
         .doctor-card {
@@ -464,6 +464,61 @@
             margin: 0;
         }
 
+        /* Location & Map Section */
+        .location-section {
+            padding: 5rem 5%;
+            background: var(--bg-light);
+        }
+
+        .location-container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+
+        .location-info {
+            flex: 1;
+            min-width: 300px;
+            padding: 2.5rem;
+        }
+
+        .location-info h3 {
+            font-size: 1.5rem;
+            color: var(--text-color);
+            margin-bottom: 1rem;
+        }
+
+        .location-info p {
+            margin-bottom: 1rem;
+            color: #555;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .location-info i {
+            color: var(--primary-color);
+            margin-top: 5px;
+        }
+
+        .location-map {
+            flex: 1;
+            min-width: 300px;
+            min-height: 350px;
+        }
+
+        .location-map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
         /* Swiper Pagination Styling */
         .swiper-pagination-bullet-active {
             background: var(--primary-color) !important;
@@ -494,13 +549,13 @@
 
         .footer-socials {
             display: flex;
-            gap: 1rem; /* Jarak horizontal antar ikon */
+            gap: 1rem;
             margin-top: 1rem;
         }
 
         .footer-socials a {
             color: #fff;
-            font-size: 1.5rem; /* Ukuran ikon sedikit diperbesar agar lebih jelas */
+            font-size: 1.5rem;
             transition: color 0.3s;
         }
 
@@ -576,6 +631,7 @@
                 <li><a href="#dokter">Dokter</a></li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="#testimoni">Testimoni</a></li>
+                <li><a href="#lokasi">Lokasi</a></li>
             </ul>
             <a href="https://wa.me/628134347300" target="_blank" class="btn-reservasi">Reservasi</a>
             <div class="menu-toggle" id="menu-toggle">
@@ -622,7 +678,6 @@
     <!-- About Section -->
     <section class="about" id="tentang">
         <div class="about-img">
-            <!-- Gambar Tentang Kami -->
             <img src="img/tentang.png" alt="Tentang Dentiq Dental House">
         </div>
         <div class="about-text">
@@ -692,10 +747,8 @@
             <h2>Dokter Gigi Profesional</h2>
         </div>
         
-        <!-- Swiper Container for Doctors -->
         <div class="swiper swiper-container-doctors">
             <div class="swiper-wrapper">
-                <!-- Slide 1 -->
                 <div class="swiper-slide">
                     <div class="doctor-card">
                         <div class="doctor-img">
@@ -707,7 +760,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Slide 2 -->
                 <div class="swiper-slide">
                     <div class="doctor-card">
                         <div class="doctor-img">
@@ -719,7 +771,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Slide 3 -->
                 <div class="swiper-slide">
                     <div class="doctor-card">
                         <div class="doctor-img">
@@ -731,7 +782,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Slide 4 -->
                 <div class="swiper-slide">
                     <div class="doctor-card">
                         <div class="doctor-img">
@@ -743,7 +793,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Slide 5 -->
                 <div class="swiper-slide">
                     <div class="doctor-card">
                         <div class="doctor-img">
@@ -755,7 +804,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Slide 6 -->
                 <div class="swiper-slide">
                     <div class="doctor-card">
                         <div class="doctor-img">
@@ -767,7 +815,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Slide 7 -->
                 <div class="swiper-slide">
                     <div class="doctor-card">
                         <div class="doctor-img">
@@ -780,7 +827,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Add Pagination -->
             <div class="swiper-pagination doctors-pagination"></div>
         </div>
     </section>
@@ -830,10 +876,8 @@
             <h2>Cerita Senyum Bahagia</h2>
         </div>
         
-        <!-- Swiper Container for Testimonials -->
         <div class="swiper swiper-container-testimonials">
             <div class="swiper-wrapper">
-                <!-- Testi 1 -->
                 <div class="swiper-slide">
                     <div class="testimonial-card">
                         <i class="fas fa-quote-left"></i>
@@ -844,7 +888,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Testi 2 -->
                 <div class="swiper-slide">
                     <div class="testimonial-card">
                         <i class="fas fa-quote-left"></i>
@@ -855,7 +898,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Testi 3 -->
                 <div class="swiper-slide">
                     <div class="testimonial-card">
                         <i class="fas fa-quote-left"></i>
@@ -866,7 +908,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Testi 4 -->
                 <div class="swiper-slide">
                     <div class="testimonial-card">
                         <i class="fas fa-quote-left"></i>
@@ -877,7 +918,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Testi 5 -->
                 <div class="swiper-slide">
                     <div class="testimonial-card">
                         <i class="fas fa-quote-left"></i>
@@ -889,8 +929,35 @@
                     </div>
                 </div>
             </div>
-            <!-- Add Pagination -->
             <div class="swiper-pagination testi-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Location & Map Section (Updated Google Maps Link) -->
+    <section class="location-section" id="lokasi">
+        <div class="section-header">
+            <h4>Lokasi Kami</h4>
+            <h2>Kunjungi Dentiq Dental House</h2>
+        </div>
+
+        <div class="location-container">
+            <div class="location-info">
+                <h3>DENTIQ DENTAL HOUSE</h3>
+                <p><i class="fas fa-map-marker-alt"></i> <strong>Alamat:</strong> Dentiq Dental House, Palangka Raya, Kalimantan Tengah</p>
+                <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> 0813-4347-300</p>
+                <p><i class="far fa-clock"></i> <strong>Jam Operasional:</strong> Senin - Sabtu (09.00 - 21.00 WIB)</p>
+                
+                <div style="margin-top: 1.8rem; display: flex; gap: 10px; flex-wrap: wrap;">
+                    <a href="https://www.google.com/maps/place/Dentiq+Dental+House/@-2.2190556,113.9130685,17z" target="_blank" class="btn-reservasi">
+                        <i class="fas fa-directions"></i> Buka Peta di Google Maps
+                    </a>
+                </div>
+            </div>
+
+            <div class="location-map">
+                <!-- Google Maps Embed Dentiq Dental House Resmi (-2.2190556, 113.9130685) -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.88371234567!2d113.9104936!3d-2.2190556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dfcb3006bfc3da1%3A0xcc8513833a72394a!2sDentiq%20Dental%20House!5e0!3m2!1sid!2sid!4v1726580000000!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </section>
 
@@ -902,7 +969,6 @@
                     <img src="img/logowhite.png" alt="Logo Dentiq Dental House">
                 </div>
                 <p>Praktek Dokter Gigi Palangka Raya. Memberikan pelayanan terbaik untuk kesehatan dan keindahan senyum Anda.</p>
-                <!-- Ikon Sosial Media (Horizontal/Flex) -->
                 <div class="footer-socials">
                     <a href="https://www.instagram.com/dentiqdentalhouse/" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="https://wa.me/628134347300" target="_blank"><i class="fab fa-whatsapp"></i></a>
@@ -914,15 +980,14 @@
                 <a href="#tentang">Tentang Kami</a>
                 <a href="#layanan">Layanan</a>
                 <a href="#dokter">Dokter Kami</a>
-                <!-- Tambahan Menu Navigasi FAQ & Testimoni -->
                 <a href="#faq">FAQ</a>
                 <a href="#testimoni">Testimoni</a>
+                <a href="#lokasi">Lokasi</a>
             </div>
             <div class="footer-col">
                 <h3>Lokasi Kami</h3>
-                <p><i class="fas fa-map-marker-alt" style="color: var(--primary-color); margin-right: 8px;"></i> Jl. G. Obos No. 15 Kav. 7</p>
-                <p>Menteng, Jekan Raya, Palangka Raya City</p>
-                <p>Central Kalimantan 73112</p>
+                <p><i class="fas fa-map-marker-alt" style="color: var(--primary-color); margin-right: 8px;"></i> Dentiq Dental House</p>
+                <p>Palangka Raya City, Central Kalimantan</p>
             </div>
         </div>
         <div class="copyright">
@@ -959,10 +1024,8 @@
         const faqQuestions = document.querySelectorAll('.faq-question');
         faqQuestions.forEach(question => {
             question.addEventListener('click', () => {
-                // Toggle active class on button
                 question.classList.toggle('active');
                 
-                // Control max-height for the answer content
                 const answer = question.nextElementSibling;
                 if (question.classList.contains('active')) {
                     answer.style.maxHeight = answer.scrollHeight + "px";
